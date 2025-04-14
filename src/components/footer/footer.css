@@ -1,0 +1,21 @@
+.footer {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #aaa;
+    padding: 15px 0;
+    font-size: 14px;
+    background-color: rgb(214, 213, 213);
+    gap: 20px;
+}
+
+
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

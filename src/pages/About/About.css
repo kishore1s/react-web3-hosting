@@ -1,0 +1,253 @@
+.about-container {
+    max-width: 1400px;
+    margin: 50px 1px;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .hero-section {
+    background: linear-gradient(135deg, #23233a 0%, #1c2744 100%);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('crypto-pattern.png') center/cover;
+    opacity: 0.1;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #a1a1a1;
+  }
+  
+  .crypto-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .crypto-icons svg {
+    font-size: 3rem;
+  }
+  
+  .bitcoin-icon {
+    color: #f7931a;
+  }
+  
+  .ethereum-icon {
+    color: #627eea;
+  }
+  
+  .mission-section, .team-section, .cta-section {
+    background: #272744;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .mission-section h2, .features-section h2, .team-section h2, .contact-section h2, .cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00c6ff;
+  }
+  
+  .mission-section p, .team-section p, .cta-section p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .features-section {
+    margin-bottom: 25px;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+  }
+  
+  .feature-card {
+    background: #2e2e4f;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature-card h3 {
+    color: #0072ff;
+    margin-bottom: 15px;
+  }
+  
+  .tech-stack {
+    margin-top: 25px;
+  }
+  
+  .tech-stack h3 {
+    color: #00c6ff;
+    margin-bottom: 15px;
+  }
+  
+  .tech-stack ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .tech-stack li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .tech-stack li::before {
+    content: '•';
+    color: #0072ff;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -5px;
+  }
+  
+  .contact-section {
+    background: #272744;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .contact-info, .enquiry-form {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .social-links a {
+    color: #a1a1a1;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #00c6ff;
+  }
+  
+  .enquiry-form h3 {
+    color: #0072ff;
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #a1a1a1;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background: #2e2e4f;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .submit-btn {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    opacity: 0.9;
+  }
+  
+  .success-message {
+    background: #4caf50;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .cta-section {
+    text-align: center;
+  }
+  
+  .connect-wallet-btn {
+    background: linear-gradient(90deg, #f7931a, #ff4d00);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .connect-wallet-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.2rem;
+    }
+  
+    .mission-section, .team-section, .contact-section, .cta-section {
+      padding: 20px;
+    }
+  }
+  

@@ -1,0 +1,146 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10%;
+    border-bottom: 2px solid grey;
+    
+    /* Fixed positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(214, 213, 213);   z-index: 1000;
+}
+
+.navbar .logo {
+    width: max(12vw, 180px);
+    height: auto;
+    object-fit: contain;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: clamp(15px, 2vw, 30px);
+    margin: 10px;
+    padding: 0;
+}
+
+.navbar li {
+    cursor: pointer;
+    font-size: clamp(18px, 1.5vw, 20px);
+    white-space: nowrap;
+    color:rgb(71, 11, 224);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: max(1vw, 12px);
+}
+
+.navbar select {
+    padding: 4px 8px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background: transparent;
+    background-color: #000;
+    cursor: pointer;
+    color: #fff;
+    font-size: clamp(12px, 1.2vw, 16px);
+}
+
+.navbar option {
+    background-color: #302f2f;
+    color: #fff;
+}
+
+.navbar button {
+    display: flex;
+    align-items: center;
+    gap: clamp(5px, 0.8vw, 10px);
+    font-size: clamp(12px, 1.2vw, 15px);
+    padding: clamp(6px, 0.8vw, 8px) clamp(10px, 1.2vw, 16px);
+    border-radius: 20px;
+    background-color: #02bef3d8;
+    cursor: pointer;
+    color: #000;
+    font-weight: 600;
+    border: none;
+}
+
+.navbar button img {
+    width: clamp(10px, 1.2vw, 14px);
+    height: auto;
+}
+
+/* Medium devices (tablets, 768px and below) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 5px 5%;
+    }
+    
+    .navbar ul {
+        gap: 12px;
+    }
+    
+    .navbar .logo {
+        width: max(10vw, 100px);
+    }
+}
+
+/* Small devices (phones, 576px and below) */
+@media (max-width: 576px) {
+    .navbar {
+        padding: 8px 3%;
+        flex-wrap: wrap;
+    }
+    
+    .navbar .logo {
+        order: 1;
+        width: max(8vw, 80px);
+    }
+    
+    .navbar ul {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        margin: 8px 0;
+        gap: 8px;
+    }
+    
+    .nav-right {
+        order: 2;
+        gap: 8px;
+    }
+    
+    .navbar select {
+        padding: 3px 6px;
+        font-size: 12px;
+    }
+    
+    .navbar button {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}
+
+/* Extra small devices (phones, 400px and below) */
+@media (max-width: 400px) {
+    .navbar ul {
+        gap: 6px;
+    }
+    
+    .navbar li {
+        font-size: 12px;
+    }
+    
+    .navbar select {
+        max-width: 80px;
+    }
+    
+    .navbar button {
+        padding: 3px 6px;
+    }
+}

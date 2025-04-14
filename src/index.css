@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Underdog", system-ui;
+  
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.app{
+  
+  min-height: 100vh;
+  display: flex;
+  
+
+  background-color:linear-gradient(135deg, #00897B 0%, #6A1B9A 100%);
+  color:#0072ff;
+
+}
+.app {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
