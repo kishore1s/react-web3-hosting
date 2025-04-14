@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar'
 import {Routes, Route, } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Coin from './pages/Coin/Coin'
-import Footer from './components/footer/footer'
+import Footer from './components/footer/Footer'
 import Blog from './pages/Blog/Blog'
 import About from './pages/About/About'
 const App = () => {
