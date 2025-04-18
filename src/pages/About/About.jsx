@@ -9,7 +9,6 @@ import {
   FaEnvelope
 } from 'react-icons/fa';
 import './About.css';
-
 const About = () => {
   const [enquiry, setEnquiry] = useState({
     name: '',
@@ -20,7 +19,6 @@ const About = () => {
   const [submitted, setSubmitted] = useState(false);
   const [showTechStack, setShowTechStack] = useState(false);
   const [showFeatures, setShowFeatures] = useState(false); // 👈 New state for features toggle
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setEnquiry(prev => ({
@@ -28,7 +26,6 @@ const About = () => {
       [name]: value
     }));
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Enquiry submitted:', enquiry);
@@ -41,7 +38,6 @@ const About = () => {
     });
     setTimeout(() => setSubmitted(false), 5000);
   };
-
   return (
     <div className="about-container">
       <section className="hero-section fade-in-up">
@@ -52,7 +48,6 @@ const About = () => {
           <FaEthereum className="ethereum-icon" />
         </div>
       </section>
-
       <section className="mission-section fade-in-up">
         <h2>Our Mission</h2>
         <p>
@@ -66,7 +61,6 @@ const About = () => {
           cryptocurrency accessible to everyone from beginners to seasoned traders.
         </p>
       </section>
-
       {/* Toggle Anchor for What We Offer */}
       <section className="fade-in-up">
         <a
@@ -78,11 +72,9 @@ const About = () => {
           <h2>what we offer</h2>
         </a>
       </section>
-
       {/* Conditionally render features section */}
       {showFeatures && (
-        <section className="features-section fade-in-up">
-          
+        <section className="features-section fade-in-up"> 
           <div className="features-grid">
             <div className="feature-card fade-in-up" style={{ animationDelay: '0.1s' }}>
               <h3>Real-time Market Data</h3>
@@ -111,7 +103,6 @@ const About = () => {
           </div>
         </section>
       )}
-
       <section className="team-section fade-in-up">
         <h2>Our Blockchain Foundation</h2>
         <p>
@@ -119,7 +110,6 @@ const About = () => {
           at its core. Our smart contracts handle content verification, reward distribution for contributors, and platform
           governance, all executed on-chain.
         </p>
-
         <a
           href="#!"
           onClick={() => setShowTechStack(!showTechStack)}
@@ -128,7 +118,6 @@ const About = () => {
         >
           {showTechStack ? 'Hide Technology Stack' : 'Show Technology Stack'}
         </a>
-
         {showTechStack && (
           <div className="tech-stack fade-in-up">
             <h3>Technology Stack</h3>
@@ -142,22 +131,19 @@ const About = () => {
           </div>
         )}
       </section>
-
       <section className="contact-section fade-in-up">
         <div className="contact-content">
           <div className="contact-info">
             <h2>Get In Touch</h2>
             <p>Have questions about cryptocurrencies, blockchain, or our platform? Reach out to us!</p>
-
             <div className="social-links fade-in-up">
               <a href="mailto:kishoremultiverse@gmail.com" aria-label="Email"><FaEnvelope /></a>
               <a href="https://instagram.com/cryptovisit" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
-              <a href="https://twitter.com/cryptovisit" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><FaTwitter /></a>
-              <a href="https://t.me/cryptovisit" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><FaTelegram /></a>
-              <a href="https://linkedin.com/company/cryptovisit" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
+              <a href="" rel="noopener noreferrer" aria-label="Twitter"><FaTwitter /></a>
+              <a href=""><FaTelegram /></a>
+              <a href="www.linkedin.com/in/sanjaykishore-t" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
             </div>
           </div>
-
           <div className="enquiry-form fade-in-up">
             <h3>Send Us Your Enquiry</h3>
             {submitted ? (
