@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import './Navbar.css';
-import logo from '../../assets/logo.jpg';
-import arrow_icon from '../../assets/arrow_icon.jpg';
+import logo from '../../assets/logo.png';
+import arrow_icon from '../../assets/arrow_icon.png';
 import { CoinContext } from '../../context/context';
 import { Link, useNavigate } from 'react-router-dom';
 
