@@ -1,5 +1,5 @@
 /* Core layout and spacing */
-.coin {
+.coin{
     padding: 0 10px 100px;
     margin-top: 20px;
     display: flex;
@@ -7,13 +7,11 @@
     width: 100%;
     align-items: center;
 }
-
 .spinner {
     display: grid;
     place-items: center;
     min-height: 80vh;
 }
-
 .spin {
     width: 65px;
     height: 65px;
@@ -22,13 +20,11 @@
     border-radius: 50%;
     animation: rotate 1.5s linear infinite;
 }
-
 @keyframes rotate {
     100% {
         transform: rotate(360deg);
     }
 }
-
 .coin-name {
     display: flex;
     flex-direction: column;
@@ -36,30 +32,25 @@
     gap: 20px;
     margin: 50px auto 10px;
 }
-
 .coin-name img {
     max-width: 90px;
 }
-
 .con-name p b {
     font-size: 44px;
     font-weight: 600;
     color: #222;
 }
-
 .coin-chart {
     width: 100%;
     height: 320px;
     margin-bottom: 40px;
 }
-
 .coin-info {
     max-width: 600px;
     margin: 900px auto 0;
     display: flex;
     flex-direction: column;
 }
-
 .coin-info ul {
     display: flex;
     justify-content: space-between;
@@ -67,11 +58,9 @@
     border-bottom: 1px solid #e0e0e0;
     list-style: none;
 }
-
 .coin-info ul li:last-child {
     font-weight: 600;
 }
-
 /* Content structure */
 .coin-content {
     width: 100%;
@@ -82,14 +71,15 @@
     flex-direction: column;
     box-sizing: border-box;
 }
-
 .coin-time-range {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(6, 6, 246);
     margin-bottom: 20px;
 }
-
 .coin-time-range button {
     padding: 8px 16px;
     background: #f6f8fa;
@@ -99,12 +89,10 @@
     cursor: pointer;
     transition: 0.2s;
 }
-
 .coin-time-range button:hover {
     background: #e8f5e9;
     border-color: #43a047;
 }
-
 /* Info Grid */
 .coin-info-grid {
     display: grid;
@@ -113,14 +101,12 @@
     width: 100%;
     margin-top: 80px;
 }
-
 .info-grid-section {
     background: #fafafa;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     padding: 16px 20px;
 }
-
 .info-grid-item {
     display: flex;
     justify-content: space-between;
@@ -147,8 +133,8 @@
 /* Responsive */
 @media (max-width: 768px) {
     .coin-info-grid {
-        grid-template-columns: 1fr;
-        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
         
     }
 
@@ -161,16 +147,33 @@
 }
 
 @media (max-width: 480px) {
+    .coin-content{
+        padding:0 4px;
+    }
     .coin-time-range button {
         padding: 6px 10px;
         font-size: 13px;
     }
 
     .coin-chart {
-        height: 220px;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 200px;
+        margin-bottom: 100px;
+        display: block; /* ensures it takes full horizontal space */
+        box-sizing: border-box;
+    }
+    .info-grid-section {
+        padding: 50px 5px;
+        font-size: 0.85rem;
+        line-height: 1.5;    
+        display: flex;
+        flex-direction: column; /* or flex depending on your layout */
+/* spacing between child elements */
+      }
+      .info-grid-section * {
+        font-size: 0.75rem;
+        line-height: 1.5;        
     }
 
-    .info-grid-section {
-        padding: 12px 15px;
-    }
 }

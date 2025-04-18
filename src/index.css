@@ -14,10 +14,7 @@ a{
   
   min-height: 100vh;
   display: flex;
-  
-
-  background-color:linear-gradient(135deg, #00897B 0%, #6A1B9A 100%);
-  color:#0072ff;
+  color:white;
 
 }
 .app {

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import './Navbar.css';
-import logo from '../../assets/logo.png';
-import arrow_icon from '../../assets/arrow_icon.png';
+import logo from '../../assets/logo.jpg';
+import arrow_icon from '../../assets/arrow_icon.jpg';
 import { CoinContext } from '../../context/context';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -51,7 +51,7 @@ const Navbar = () => {
           <option value="inr">INR</option>
           <option value="eur">EUR</option>
         </select>
-        <button className="btn">
+        <button className="login-btn">
           Login <img src={arrow_icon} alt="arrow" />
         </button>
       </div>

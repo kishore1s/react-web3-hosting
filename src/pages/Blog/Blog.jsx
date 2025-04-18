@@ -43,7 +43,7 @@ const Blog = () => {
           {articles.slice(0, visibleCount).map((article, index) => (
             <div key={index} className="news-card">
               <img
-                src={article.image || '../../assets/blog.png'}
+                src={article.image || '../../assets/blog.jpg'}
                 alt={article.title}
               />
               <h3>{article.title}</h3>

@@ -1,7 +1,6 @@
 .crypto-news {
     padding: 40px 20px;
-    max-width: 1100px;
-    margin: auto;
+    max-width: 1200px;
     margin-top: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
@@ -9,6 +8,7 @@
   .crypto-news h2 {
     text-align: center;
     margin-bottom: 30px;
+    color: black;
   }
   
   .error {
@@ -24,7 +24,7 @@
   }
   
   .news-card {
-    background: #f9f9f9;
+    background: #1e1e2e;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -44,6 +44,7 @@
   .news-card h3 {
     font-size: 1.2rem;
     margin: 10px 0;
+    color: #627eea;
   }
   
   .news-card p {
@@ -68,7 +69,7 @@
   /* Load More Button */
   .load-more {
     padding: 10px 20px;
-    background-color: #203a43;
+    background-color: #0190d7;
     color: white;
     border: none;
     border-radius: 6px;
@@ -88,11 +89,14 @@
     }
   
     .news-card img {
-      height: 200px;
+      height: 140px;
     }
   
     .load-more {
       width: 100%;
+    }
+    .news-card p{
+      display: none;
     }
   }
   .educational-content {
@@ -109,7 +113,7 @@
   }
   
   .education-category {
-    background: #f9f9f9;
+    background: white;
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 20px;
@@ -159,5 +163,6 @@
     color: #555;
     margin-bottom: 0;
   }
-  
+
+
   /* Keep all your existing .crypto-news styles exactly as they are */ 

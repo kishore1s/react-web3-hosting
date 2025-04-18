@@ -33,24 +33,25 @@ const Home = () => {
 
   return (
     <div className='home'>
-      <div className='hero'>
-        <h1>Largest<br />Crypto Marketplace</h1>
-        <form onSubmit={searchHandler} className='form'>
-          <input
-            onChange={inputHandler}
-            list='coinlist'
-            value={input}
-            type='text'
-            placeholder='Search for crypto'
-            required
-          />
-          <datalist id='coinlist'>
-            {allcoin.map((item, index) => (
-              <option key={index} value={item.name} />
-            ))}
-          </datalist>
-          <button className='btn' type='submit'>Search</button>
-        </form>
+      <div className='hero'>  
+          <h1>Largest<br />Crypto Marketplace</h1>
+          <form onSubmit={searchHandler} className='form'>
+            <input
+              onChange={inputHandler}
+              list='coinlist'
+              value={input}
+              type='text'
+              placeholder='Search for crypto'
+              required
+            />
+            <datalist id='coinlist'>
+              {allcoin.map((item, index) => (
+                <option key={index} value={item.name} />
+              ))}
+            </datalist>
+            <button className='btn' type='submit'>Search</button>
+          </form>
+        <img src='src\assets\hero-bg.jpg' alt='hero' className='hero-bg' />
       </div>
 
       {/* Move the info-box outside the hero section */}
@@ -63,7 +64,7 @@ const Home = () => {
         {showMore && (
           <div className='extra-text'>
             <p>
-              The data presented is for informational purposes only. Some data is provided by CoinMarketCap and is shown on an “as is” basis, without representation or warranty of any kind. Please view our General Risk Warning for more information.
+              The data presented is for informational purposes only. Some data is provided by CoinMarketCap and is shown on an "as is" basis, without representation or warranty of any kind. Please view our General Risk Warning for more information.
             </p>
           </div>
         )}
