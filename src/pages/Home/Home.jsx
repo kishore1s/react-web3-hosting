@@ -51,7 +51,7 @@ const Home = () => {
             </datalist>
             <button className='btn' type='submit'>Search</button>
           </form>
-        <img src='src\assets\hero-bg.jpg' alt='hero' className='hero-bg' />
+        <img src='src\assets\hero-bg.png' alt='hero' className='hero-bg' />
       </div>
 
       {/* Move the info-box outside the hero section */}
